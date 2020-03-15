@@ -30,27 +30,14 @@ export default {
         validation: Rule => Rule.required()
       },
     {
-      name: 'bioA',
-      type: 'string',
-      title: 'Bio Part 1',
-      description: 'Paragraphs(s) before a list of certifications',
-      validation: Rule => Rule.required()
-    },    
-    {
-        name: 'certifications',
-        title: 'Certifications, Memberships & Licenses',
-        type: 'array',
-        of: [
-            {
-            type: 'string'
-            }
-        ]
-    },
-    {
-      name: 'bioB',
-      type: 'string',
-      title: 'Bio Part 2',
-      description: 'Paragraph(s) after a list of certifications'
+      name: 'bio',
+      type: 'array',
+      title: 'Bio',
+      of: [
+        {
+          type: 'block'
+        }
+      ]
     }
   ],
   preview: {
