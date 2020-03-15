@@ -1,27 +1,19 @@
-import {format} from 'date-fns'
 
 export default {
-  name: 'trainer',
+  name: 'service',
   type: 'document',
-  title: 'Trainer',
+  title: 'Service',
   fields: [
     {
       name: 'name',
       type: 'string',
-      title: 'Name',
-      description: 'Name',
+      title: 'Service Title',
       validation: Rule => Rule.required()
     },
     {
-        name: 'category',
-        title: 'Permanent or Guest Trainer?',
+        name: 'subtitle',
+        title: 'Subtitle (i.e. "for puppies only")',
         type: 'string',
-        options: {
-            list: [
-                {title: 'Permanent', value: 'permanent'},
-                {title: 'Guest', value: 'guest'}
-            ]
-        }
     },
     {
         name: 'image',
@@ -30,9 +22,10 @@ export default {
         validation: Rule => Rule.required()
       },
     {
-      name: 'bio',
+      name: 'description',
       type: 'array',
-      title: 'Bio',
+      title: 'Service description',
+        validation: Rule => Rule.required(),
       of: [
         {
           type: 'block'
