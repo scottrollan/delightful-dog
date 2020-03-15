@@ -13,6 +13,17 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+        name: 'category',
+        title: 'Permanent or Guest Trainer?',
+        type: 'string',
+        options: {
+            list: [
+                {title: 'Permanent', value: 'permanent'},
+                {title: 'Guest', value: 'guest'}
+            ]
+        }
+    },
+    {
         name: 'image',
         type: 'image',
         title: 'Picture',
