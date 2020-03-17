@@ -10,6 +10,7 @@ import post from './documents/post'
 import siteSettings from './documents/siteSettings'
 import trainer from './documents/trainer'
 import service from './documents/service'
+import author from './documents/author'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'

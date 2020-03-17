@@ -16,12 +16,5 @@
   "devDependencies": {
     "@sanity/cli": "^1.148.4",
     "lerna": "^3.13.1"
-  },
-  "dependencies": {
-    "groq": "^1.149.0",
-    "next": "^9.3.0",
-    "next-seo": "^4.4.0",
-    "react": "^16.13.0",
-    "react-inlinesvg": "^1.2.0"
   }
 }
