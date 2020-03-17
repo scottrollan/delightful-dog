@@ -18,8 +18,8 @@ export default {
         type: 'string',
         options: {
             list: [
-                {title: 'Permanent', value: 'permanent'},
-                {title: 'Guest', value: 'guest'}
+                {title: 'Permanent', value: 'permanent trainer'},
+                {title: 'Guest', value: 'guest trainer'}
             ]
         }
     },
