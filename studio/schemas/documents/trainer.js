@@ -41,7 +41,7 @@ export default {
     },
     {
       name: 'displayOrder',
-      type: 'integer',
+      type: 'number',
       title: 'Display Order on Page'
     }
   ],
