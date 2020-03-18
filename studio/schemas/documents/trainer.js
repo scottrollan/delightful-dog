@@ -1,4 +1,4 @@
-import {format} from 'date-fns'
+import { format } from 'date-fns'
 
 export default {
   name: 'trainer',
@@ -13,22 +13,22 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-        name: 'category',
-        title: 'Permanent or Guest Trainer?',
-        type: 'string',
-        options: {
-            list: [
-                {title: 'Permanent', value: 'permanent trainer'},
-                {title: 'Guest', value: 'guest trainer'}
-            ]
-        }
+      name: 'category',
+      title: 'Permanent or Guest Trainer?',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Permanent', value: 'permanent trainer' },
+          { title: 'Guest', value: 'guest trainer' }
+        ]
+      }
     },
     {
-        name: 'image',
-        type: 'image',
-        title: 'Picture',
-        validation: Rule => Rule.required()
-      },
+      name: 'image',
+      type: 'image',
+      title: 'Picture',
+      validation: Rule => Rule.required()
+    },
     {
       name: 'bio',
       type: 'array',
@@ -38,6 +38,11 @@ export default {
           type: 'block'
         }
       ]
+    },
+    {
+      name: 'displayOrder',
+      type: 'integer',
+      title: 'Display Order on Page'
     }
   ],
   preview: {
@@ -45,7 +50,7 @@ export default {
       title: 'name',
       media: 'image'
     },
-    prepare ({title = 'No title', media}) {
+    prepare({ title = 'No title', media }) {
       return {
         title,
         media
