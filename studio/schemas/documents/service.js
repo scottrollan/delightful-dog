@@ -16,6 +16,11 @@ export default {
         type: 'string',
     },
     {
+      name: 'displayOrder',
+      type: 'number',
+      title: 'Display Order on Page'
+    },
+    {
         name: 'image',
         type: 'image',
         title: 'Picture',
