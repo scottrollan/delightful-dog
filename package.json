@@ -16,5 +16,9 @@
   "devDependencies": {
     "@sanity/cli": "^1.148.4",
     "lerna": "^3.13.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/react-fontawesome": "^0.1.9"
   }
 }

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+/*font-family: 'Courgette', cursive;*/
+
 :root {
   --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
 
@@ -6,8 +10,11 @@
   --color-gray: #697a90;
   --color-light-gray: #b4bcc7;
   --color-very-light-gray: #e7ebed;
-  --color-white: #fff;
+  --color-white: #fdfdfd;
   --color-accent: #156dff;
+  --delightful-neutral: #451F1E;
+  --delightful-neutral-muted: #ECE8E8;
+  --delightful-bright: #00979F;
 
   /* Typography */
   --unit: 16;

@@ -1,0 +1,87 @@
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
+
+.topInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 0 0 1em;
+  margin: 0;
+  box-sizing: border-box;
+  @media (--media-max-medium){
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.topInfo > div {
+  display: flex;
+  @media (--media-max-medium){
+    width: 100%;
+  }
+}
+#infoDiv {
+  justify-content: flex-start;
+  @media (--media-max-medium){
+    /* justify-content: space-between; */
+  }
+}
+#tabDiv {
+  justify-content: flex-end;
+  @media (--media-max-medium){
+    justify-content: flex-end;
+  }
+}
+
+.contactBtn, .icon {
+  font-size: var(--font-base-size);
+  line-height: var(--font-base-line-height);
+  text-decoration: none;
+  color: var(--delightful-neutral);
+  padding: 1rem 0.6rem;
+  @media (--media-max-large){
+    font-size: var(--font-small-size);
+    line-height: var(--font-base-small-height);
+    padding: 1rem .5rem;
+  }
+  @media (--media-max-medium){
+    font-size: var(--font-small-size);
+    line-height: var(--font-base-small-height);
+  }
+  @media (--media-max-small){
+    font-size: var(--font-micro-size);
+    padding: 1rem 0.2rem;
+  }
+}
+.icon {
+  color: var(--delightful-bright);
+  font-size: x-large;
+}
+.contactBtn:hover, .icon:hover {
+  opacity: 0.7;
+}
+
+
+#homeTab, #blogTab {
+  color: var(--delightful-neutral);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem; 
+  height: 100%;
+}
+
+#homeTab {
+  background-color: var(--delightful-bright);
+}
+
+#tabDiv:hover > #homeTab {
+    background-color: var(--color-white);
+}
+
+#tabDiv #homeTab:hover {
+    background-color: var(--delightful-bright);
+}
+
+#blogTab:hover {
+  background-color: var(--delightful-bright);
+}
