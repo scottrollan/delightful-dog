@@ -10,7 +10,7 @@ export default {
       type: 'string',
       title: 'Name',
       description: 'Name',
-      validation: Rule => Rule.required()
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'category',
@@ -19,15 +19,16 @@ export default {
       options: {
         list: [
           { title: 'Permanent', value: 'permanent trainer' },
-          { title: 'Guest', value: 'guest trainer' }
-        ]
-      }
+          { title: 'Guest', value: 'guest trainer' },
+          { title: 'Inactive', value: 'inactive' },
+        ],
+      },
     },
     {
       name: 'image',
       type: 'image',
       title: 'Picture',
-      validation: Rule => Rule.required()
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'bio',
@@ -35,26 +36,26 @@ export default {
       title: 'Bio',
       of: [
         {
-          type: 'block'
-        }
-      ]
+          type: 'block',
+        },
+      ],
     },
     {
       name: 'displayOrder',
       type: 'number',
-      title: 'Display Order on Page'
-    }
+      title: 'Display Order on Page',
+    },
   ],
   preview: {
     select: {
       title: 'name',
-      media: 'image'
+      media: 'image',
     },
     prepare({ title = 'No title', media }) {
       return {
         title,
-        media
+        media,
       }
-    }
-  }
+    },
+  },
 }
